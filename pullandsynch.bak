@@ -6,8 +6,8 @@ java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384
 cd dist
 echo "build done..."
 echo "copying build to deployed dir ..."
-unzip parent-social-1.0-SNAPSHOT.zip
-cd parent-social-1.0-SNAPSHOT/
+unzip pharmakhana-1.0-SNAPSHOT.zip
+cd pharmakhana-1.0-SNAPSHOT/
 rsync -avzh lib/ ../../../parent-social-1.0-SNAPSHOT/lib 
 cd ../../..
 cd parent-social-1.0-SNAPSHOT/

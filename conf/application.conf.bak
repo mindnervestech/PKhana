@@ -41,8 +41,8 @@ application.langs="en"
 
 db.default.driver=com.mysql.jdbc.Driver
 db.default.url="jdbc:mysql://localhost:3306/pharmakhanadb?characterEncoding=UTF-8"
-db.default.user=root
-db.default.pass=root
+db.default.user=myuser
+db.default.pass=mypass
 db.default.jndiName=DefaultDS
 jpa.default=defaultPersistenceUnit
 
