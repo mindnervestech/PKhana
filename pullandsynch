@@ -8,5 +8,6 @@ echo "build done..."
 echo "copying build to deployed dir ..."
 unzip pharmakhana-1.0-SNAPSHOT.zip
 cd pharmakhana-1.0-SNAPSHOT/
-nohup  ./start -Dhttp.port=80 &
+chmod 777 start
+echo "nohup  ./start -Dhttp.port=80 &"
 
