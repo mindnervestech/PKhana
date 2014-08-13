@@ -1,0 +1,21 @@
+2014-08-13 23:41:45,868 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-08-13 23:47:47,411 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:mysql://localhost:3306/pharmakhanadb?characterEncoding=UTF-8] bound to JNDI as DefaultDS
+
+2014-08-13 23:47:48,314 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost:3306/pharmakhanadb?characterEncoding=UTF-8
+
+2014-08-13 23:47:52,062 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-13 23:49:05,223 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+Executing getCountries service :: Start
+
+2014-08-13 23:49:05,224 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+Request Parameters : language code = en, Unique Id = 123456
+
+2014-08-13 23:49:05,702 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+Executing getCountries service :: End
+

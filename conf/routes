@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                   	controllers.Application.index()
+
+GET		/countries					com.pharmakhana.web.controllers.CountryController.getCountries(langCode: String, uniqueId: String)
+GET 	/definedlocations					com.pharmakhana.web.controllers.DefinedLocationsController.getPreDefinedLocations(langCode: String, countryCode: String)
+GET 	/insurances					com.pharmakhana.web.controllers.InsuranceController.getInsuranceProfiles(langCode: String, countryCode: String)
+
+#this mapping for contains search of pharmacy
+#GET 	/pharmacies					com.pharmakhana.web.controllers.PharmacyController.searchContainsPharmacies(langCode: String, countryCode: String, pharmacyName: String)
+
+#this mapping for pharmacy search based on gps location, location, ins coverage, etc.
+#GET 	/pharmacies/search			com.pharmakhana.web.controllers.PharmacyController.searchPharmacies(longitude: String, latitude: String)
+
+POST	/pharmacies/:pharmacyId/profileseen			com.pharmakhana.web.controllers.PharmacyController.updatePharmacySeenCount(pharmacyId: Integer)
+POST	/pharmacies/:pharmacyId/profilecontacted	com.pharmakhana.web.controllers.PharmacyController.updatePharmacyContactByCount(pharmacyId: Integer)
+POST	/feedback/audit				com.pharmakhana.web.controllers.FeedbackController.logFeedbackMessage(uniqueId: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file           	controllers.Assets.at(path="/public", file)
